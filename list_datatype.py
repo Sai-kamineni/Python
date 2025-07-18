@@ -30,5 +30,27 @@ l = [1, 2, 3 ,"abc", False]
 l.append(True)
 print(l)      #[1, 2, 3, 'abc', False, True]
 
-l.insert(0, "abd")
+l.append([3, 2, 1, 'abc', False, True])
+print(l)      # [1, 2, 3, 'abc', False, True, [3, 2, 1, 'abc', False, True]]
+
+#Inplace operation
+l.insert(0, "abc")  
+print(l)           #['abc', 1, 2, 3, 'abc', False, True, [3, 2, 1, 'abc', False, True]]
+
+res=l.insert(0, "abc")
+print(res, 1)       #None 1
+
+#l = [3, 2, 1, 'abc', False, True]
+l.extend([1,2,3, "mba"])
+print(l)     #[3, 2, 1, 'abc', False, True, 1, 2, 3, 'mba']
+
+#Inplace operation
+l = [2, 3, 1]  
+l.sort()
 print(l)
+
+#I dont want inplace operaion , sorted returns a new list.
+l1=sorted(l) 
+print(l, l1)   #[2, 3, 1] [1, 2, 3]
+
+#List is a mutable datatype (we can change the values in list)
