@@ -30,3 +30,5 @@ l = [1, 2, 3 ,"abc", False]
 l.append(True)
 print(l)      #[1, 2, 3, 'abc', False, True]
 
+l.insert(0, "abd")
+print(l)
