@@ -47,3 +47,8 @@ while idx < len(l):
     idx += 1
 else:
     print("I am outside loop and loop got exited without any break statement")
+
+
+# d = {'k': 123, (1, 2, 3, 4): 123, (1, 2, 3, 4, 5): list(str(123))}
+# for k, v in d.items():
+#     print(k, v)
