@@ -52,3 +52,13 @@ else:
 # d = {'k': 123, (1, 2, 3, 4): 123, (1, 2, 3, 4, 5): list(str(123))}
 # for k, v in d.items():
 #     print(k, v)
+
+
+l = (10, 20, 30, "abcd", False, "abcde")
+# for idx, ele in enumerate(l):
+#     print(idx, ele)
+
+print(list(range(len(l))))
+
+for idx in range(len(l)):
+    print(l[idx])
